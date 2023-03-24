@@ -8,7 +8,7 @@ import Team  from "./screens/team";
 import Invoices  from "./screens/invoices";
 import Contacts  from "./screens/contacts";
 // import Bar  from "./screens/bar";
-// import Form  from "./screens/form";
+import Form  from "./screens/form";
 // import Line  from "./screens/line";
 // import Pie  from "./screens/pie";
 // import FAQ  from "./screens/fAQ";
@@ -32,10 +32,11 @@ const App = () => {
               <Route path="/Team" element={<Team />} />
               <Route path="/Contacts" element={<Contacts />} />
               <Route path="/Invoices" element={<Invoices />} />
+              <Route path="/Form" element={<Form />} />
               {/* 
               
               <Route path="/Bar" element={<Bar />} />
-              <Route path="/Form" element={<Form />} />
+              
               <Route path="/Line" element={<Line />} />
               <Route path="/Pie" element={<Pie />} />
               <Route path="/FAQ" element={<FAQ />} />
