@@ -61,7 +61,6 @@ const Invoices = () => {
                     checkboxSelection
                     rows={mockDataInvoices}
                     columns={columns}
-                    // sx={{height: "650px"}}
                 />
             </Box>
         </Box>
