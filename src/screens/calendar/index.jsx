@@ -86,15 +86,15 @@ const Calendar = () => {
                     <FullCalendar
                         height="75vh"
                         plugins={[
-                        dayGridPlugin,
-                        timeGridPlugin,
-                        interactionPlugin,
-                        listPlugin,
+                            dayGridPlugin,
+                            timeGridPlugin,
+                            interactionPlugin,
+                            listPlugin,
                         ]}
                         headerToolbar={{
-                        left: "prev,next today",
-                        center: "title",
-                        right: "dayGridMonth,timeGridWeek,timeGridDay,listMonth",
+                            left: "prev,next today",
+                            center: "title",
+                            right: "dayGridMonth,timeGridWeek,timeGridDay,listMonth",
                         }}
                         initialView="dayGridMonth"
                         editable={true}
@@ -105,16 +105,16 @@ const Calendar = () => {
                         eventClick={handleEventClick}
                         eventsSet={(events) => setCurrentEvents(events)}
                         initialEvents={[
-                        {
-                            id: "12315",
-                            title: "All-day event",
-                            date: "2023-03-25",
-                        },
-                        {
-                            id: "5123",
-                            title: "Timed event",
-                            date: "2023-03-26",
-                        },
+                            {
+                                id: "12315",
+                                title: "All-day event",
+                                date: "2023-03-25",
+                            },
+                            {
+                                id: "5123",
+                                title: "Timed event",
+                                date: "2023-03-26",
+                            },
                         ]}
                     />
                 </Box>
