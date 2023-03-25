@@ -13,7 +13,7 @@ import Form  from "./screens/form";
 // import Pie  from "./screens/pie";
 // import FAQ  from "./screens/fAQ";
 // import Geography  from "./screens/geography";
-// import Callendar  from "./screens/callendar";
+import Calendar  from "./screens/calendar";
  
 const App = () => {
   const [theme , colorMode] = useMode();
@@ -33,6 +33,7 @@ const App = () => {
               <Route path="/Contacts" element={<Contacts />} />
               <Route path="/Invoices" element={<Invoices />} />
               <Route path="/Form" element={<Form />} />
+              <Route path="/Calendar" element={<Calendar />} />
               {/* 
               
               <Route path="/Bar" element={<Bar />} />
@@ -41,7 +42,7 @@ const App = () => {
               <Route path="/Pie" element={<Pie />} />
               <Route path="/FAQ" element={<FAQ />} />
               <Route path="/Geography" element={<Geography />} />
-              <Route path="/Callendar" element={<Callendar />} /> */}
+               */}
             </Routes>
           </main>
         </div>
