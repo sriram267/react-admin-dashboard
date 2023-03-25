@@ -3,7 +3,6 @@ import { Formik } from "formik";
 import * as yup from "yup";
 import useMediaQuery from "@mui/material/useMediaQuery";
 import Header from "../../components/Header";
-import { useTheme } from "@emotion/react";
 
 const initialValues = {
     firstName: "",
@@ -107,7 +106,7 @@ const Form = () => {
                             fullWidth
                             variant="filled"
                             type="text"
-                            label="Address1"
+                            label="Address 1"
                             onBlur={handleBlur}
                             onChange={handleChange}
                             values={values.address1}
@@ -121,7 +120,7 @@ const Form = () => {
                             fullWidth
                             variant="filled"
                             type="text"
-                            label="Address2"
+                            label="Address 2"
                             onBlur={handleBlur}
                             onChange={handleChange}
                             values={values.address2}
