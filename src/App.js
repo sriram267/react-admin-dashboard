@@ -1,58 +1,51 @@
-import { ColorModeContext, useMode} from "./theme";
-import { CssBaseline, ThemeProvider } from "@mui/material";
+import { useState } from "react";
 import { Routes, Route } from "react-router-dom";
 import Topbar from "./screens/global/Topbar";
-// import Dashboard  from "./screens/dashboard";
 import Sidebar from "./screens/global/Sidebar";
-import Team  from "./screens/team";
-import Invoices  from "./screens/invoices";
-import Contacts  from "./screens/contacts";
-// import Bar  from "./screens/bar";
-import Form  from "./screens/form";
-// import Line  from "./screens/line";
-// import Pie  from "./screens/pie";
-// import FAQ  from "./screens/fAQ";
-// import Geography  from "./screens/geography";
-import Calendar  from "./screens/calendar";
- 
-const App = () => {
-  const [theme , colorMode] = useMode();
+import Dashboard from "./screens/dashboard";
+import Team from "./screens/team";
+import Invoices from "./screens/invoices";
+import Contacts from "./screens/contacts";
+import Bar from "./screens/bar";
+import Form from "./screens/form";
+import Line from "./screens/line";
+import Pie from "./screens/pie";
+import FAQ from "./screens/faq";
+import Geography from "./screens/geography";
+import { CssBaseline, ThemeProvider } from "@mui/material";
+import { ColorModeContext, useMode } from "./theme";
+import Calendar from "./screens/calendar";
+
+function App() {
+  const [theme, colorMode] = useMode();
+  const [isSidebar, setIsSidebar] = useState(true);
 
   return (
     <ColorModeContext.Provider value={colorMode}>
       <ThemeProvider theme={theme}>
         <CssBaseline />
         <div className="app">
-          <Sidebar />
+          <Sidebar isSidebar={isSidebar} />
           <main className="content">
-            <Topbar />
+            <Topbar setIsSidebar={setIsSidebar} />
             <Routes>
-              {/* <Route path="/" element={<Dashboard />} /> */}
-              <Route path="/Sidebar" element={<Sidebar />} />
-              <Route path="/Team" element={<Team />} />
-              <Route path="/Contacts" element={<Contacts />} />
-              <Route path="/Invoices" element={<Invoices />} />
-              <Route path="/Form" element={<Form />} />
-              <Route path="/Calendar" element={<Calendar />} />
-              {/* 
-              
-              <Route path="/Bar" element={<Bar />} />
-              
-              <Route path="/Line" element={<Line />} />
-              <Route path="/Pie" element={<Pie />} />
-              <Route path="/FAQ" element={<FAQ />} />
-              <Route path="/Geography" element={<Geography />} />
-               */}
+              <Route path="/" element={<Dashboard />} />
+              <Route path="/team" element={<Team />} />
+              <Route path="/contacts" element={<Contacts />} />
+              <Route path="/invoices" element={<Invoices />} />
+              <Route path="/form" element={<Form />} />
+              <Route path="/bar" element={<Bar />} />
+              <Route path="/pie" element={<Pie />} />
+              <Route path="/line" element={<Line />} />
+              <Route path="/faq" element={<FAQ />} />
+              <Route path="/calendar" element={<Calendar />} />
+              <Route path="/geography" element={<Geography />} />
             </Routes>
           </main>
         </div>
       </ThemeProvider>
     </ColorModeContext.Provider>
-    
-  
-  )
+  );
 }
 
 export default App;
-
-
