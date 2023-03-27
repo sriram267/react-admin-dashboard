@@ -51,7 +51,7 @@ const Team = () => {
                     border: "none",
                 }, 
                 "&. MuiDataGrid-cell" : {
-                    borderBottom: "none",
+                    borderBottom: "1px solid grey",
                 },
                 "&. name__column-cell" : {
                     color: colors.greenAccent[300],

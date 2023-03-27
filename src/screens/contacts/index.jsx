@@ -31,7 +31,7 @@ const Contacts = () => {
                     border: "none",
                 }, 
                 "& .MuiDataGrid-cell" : {
-                    borderBottom: "none",
+                    borderBottom: "1px solid colors.grey[200]",
                 },
                 "& .name__column-cell" : {
                     color: colors.greenAccent[300],
@@ -49,7 +49,7 @@ const Contacts = () => {
                 },
                 "& .MuiDataGrid-toolbarContainer .MuiButton-text": {
                     color: `${colors.grey[100]} !important`,
-                    mb: "10px" 
+                    mb: "10px", 
                 }
             }} >
                 <DataGrid
