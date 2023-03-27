@@ -3,6 +3,8 @@ Project React Admin Dashboard
 Packages used : @mui/material , data grid for data tables, react router for navigation, react-pro-sidebar for building the side bar,
                 formik yup for form and validation, full calendar for calendar page , nivo charts for charts page
               
+Website deployed using netlify : https://react-admin-dashboard-2023.netlify.app
+
 Website ScreenShot : 
 
 
