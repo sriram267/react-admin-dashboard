@@ -6,4 +6,4 @@ Packages used : @mui/material , data grid for data tables, react router for navi
 Website ScreenShot : 
 
 
-![Website thumbnail](https://user-images.githubusercontent.com/68237238/227886249-a7280220-b758-474f-af29-e6cd550be312.png)
+![react admin dashboard](https://user-images.githubusercontent.com/68237238/227886740-95f3eb84-4fd1-4e8f-8337-f9307c0aaf0e.png)
