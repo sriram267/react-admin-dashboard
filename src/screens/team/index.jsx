@@ -44,7 +44,7 @@ const Team = () => {
         <Box m="20px">
             <Header title="TEAM" subtitle="Managing The Team Members" />
             <Box 
-            m="40px"
+            m="40px 0 0 0"
             height="75vh"
             sx={{
                 "&. MuiDataGrid-root" : {
